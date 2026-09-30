@@ -1,0 +1,21 @@
+# Ambientes virtuais
+.venv/
+.venv*/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Backups de editor
+*~
+
+# Credenciais
+.env
+*.key
+
+# Arquivos pesados
+*.zip
+*.mp4
