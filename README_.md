@@ -28,6 +28,15 @@ METADADOS das 16 colunas:
 * **availability_365:** Número de dias, dentro de um período de 1 ano (365 dias no futuro a partir da data de extração), em que o imóvel está disponível para reserva.
 * **number_of_reviews_ltm:** Total de avaliações recebidas pelo imóvel nos últimos 12 meses.
 
+Perguntas relacionadas com preço e localização.
+Qual é a média, a mediana e o valor máximo das diárias na cidade?
+Quais são os 10 bairros mais caros e os 10 mais baratos em média?
+Quais bairros concentram a maior quantidade de anúncios do Airbnb?
+
+Perguntas relacionadas com demanda.
+Imóveis mais populares?
+Existem imóveis com melhor custo benefício? Com base em que podemos avaliar isso?
+
 2. Diagnóstico de qualidade
 - Dimensões, tipos, uso de memória
 
