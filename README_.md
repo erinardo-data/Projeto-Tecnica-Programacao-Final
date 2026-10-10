@@ -56,7 +56,6 @@ host_name                        3        0.010600
 
 - Duplicados, categorias inconsistentes, valores inválidos
 Linhas perfeitamente duplicadas: 0
-
 Distribuição de Tipos de Quarto (room_type):
 room_type
 Entire home/apt    22093
@@ -64,8 +63,11 @@ Private room        5685
 Shared room          470
 Hotel room            53
 Name: count, dtype: int64
-
 Anúncios com preço R$ 0 ou negativo: 6
 Anúncios com noites mínimas zeradas ou negativas: 0
 
 - Identificação de outliers com método justificado (IQR ou z-score)
+Método Justificado: IQR (Intervalo Interquartil)
+Q1 (25%): R$ 317.00 | Q3 (75%): R$ 1071.00
+Limite Superior de Corte: R$ 2202.00
+Total de Outliers encontrados: 2450 anúncios (8.66% da base)
