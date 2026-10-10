@@ -1,3 +1,9 @@
+Fala pessoal, sobre a organização do nosso repositório Git. Criei e organizei três branches com propósitos específicos:
+• main: É a nossa branch principal. Ela contém o código oficial, estável e pronto para produção.
+• backup: Criei esta branch (a partir da branch inicial estava aprendendo a mexer no git, inicialmente se chamava limpeza) para servir como um ponto de restauração seguro do código antigo antes das novas mudanças.
+• backup_felipe: É a minha branch de trabalho atual, criada hoje (10/10/2026). Ela nasceu como uma cópia exata da main e é onde vou desenvolver minhas tarefas e commits a partir de agora, sem risco de quebrar o código principal.
+(Aproveito para avisar que a branch antiga chamada limpeza será deletada do servidor para manter o repositório limpo, essa é a cópia inicial, não tinha gostado do nome).
+
 1. Apresentação da base e das perguntas
 A estrutura deste arquivo corresponde ao padrão do **Inside Airbnb**, um projeto independente de código aberto que extrai dados públicos diretamente do site do Airbnb para analisar o impacto dos aluguéis de curta duração nas cidades ao redor do mundo. Este arquivo específico é a versão resumida (`listings.csv`) focada exclusivamente na cidade do Rio de Janeiro, cobrindo 152 bairros.
 
