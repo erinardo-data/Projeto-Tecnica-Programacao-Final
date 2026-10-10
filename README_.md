@@ -1,3 +1,4 @@
+1. Apresentação da base e das perguntas
 A estrutura deste arquivo corresponde ao padrão do **Inside Airbnb**, um projeto independente de código aberto que extrai dados públicos diretamente do site do Airbnb para analisar o impacto dos aluguéis de curta duração nas cidades ao redor do mundo. Este arquivo específico é a versão resumida (`listings.csv`) focada exclusivamente na cidade do Rio de Janeiro, cobrindo 152 bairros.
 
 O arquivo captura o estado da plataforma até o final de 2022. O registro de hospedagens baseado nas datas da última avaliação (`last_review`) abrange o período de **21 de fevereiro de 2012 a 30 de dezembro de 2022**. O indicador de atividades recentes (ltm - *last twelve months*) abrange o ano de 2022.
@@ -20,3 +21,51 @@ METADADOS das 16 colunas:
 * **calculated_host_listings_count:** Quantidade total de anúncios ativos que este mesmo anfitrião possui na cidade (útil para identificar investidores e empresas de gestão imobiliária).
 * **availability_365:** Número de dias, dentro de um período de 1 ano (365 dias no futuro a partir da data de extração), em que o imóvel está disponível para reserva.
 * **number_of_reviews_ltm:** Total de avaliações recebidas pelo imóvel nos últimos 12 meses.
+
+2. Diagnóstico de qualidade
+- Dimensões, tipos, uso de memória
+
+Dimensões: 28301 linhas e 16 colunas
+Uso de Memória: 11.19 MB
+
+Tipos de dados por coluna:
+id                                  int64
+name                                  str
+host_id                             int64
+host_name                             str
+neighbourhood                         str
+latitude                          float64
+longitude                         float64
+room_type                             str
+price                               int64
+minimum_nights                      int64
+number_of_reviews                   int64
+last_review                           str
+reviews_per_month                 float64
+calculated_host_listings_count      int64
+availability_365                    int64
+number_of_reviews_ltm               int64
+dtype: object
+
+- Faltantes por coluna (quantidade e percentual)
+                   Faltantes (Qtd)  Percentual (%)
+reviews_per_month             8518       30.097876
+last_review                   8518       30.097876
+name                            29        0.102470
+host_name                        3        0.010600
+
+- Duplicados, categorias inconsistentes, valores inválidos
+Linhas perfeitamente duplicadas: 0
+
+Distribuição de Tipos de Quarto (room_type):
+room_type
+Entire home/apt    22093
+Private room        5685
+Shared room          470
+Hotel room            53
+Name: count, dtype: int64
+
+Anúncios com preço R$ 0 ou negativo: 6
+Anúncios com noites mínimas zeradas ou negativas: 0
+
+- Identificação de outliers com método justificado (IQR ou z-score)
