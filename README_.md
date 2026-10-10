@@ -86,3 +86,42 @@ Método Justificado: IQR (Intervalo Interquartil)
 Q1 (25%): R$ 317.00 | Q3 (75%): R$ 1071.00
 Limite Superior de Corte: R$ 2202.00
 Total de Outliers encontrados: 2450 anúncios (8.66% da base)
+
+3. Limpeza e transformação
+=========================================
+       RESUMO DE PREÇOS (RJ)             
+=========================================
+Preço Médio na cidade:   R$ 666.33
+Preço Mediano na cidade: R$ 548.00
+
+=========================================
+   TOP 10 BAIRROS MAIS CAROS (Média)     
+=========================================
+                          Preço Médio (R$)  Mediana (R$)  Qtd Anúncios
+                                                         
+Leblon                              979.63         919.5          1218
+Ipanema                             927.25         865.0          2360
+Lagoa                               859.20         785.0           202
+São Conrado                         833.30         786.0           155
+Joá                                 807.87         639.5            46
+Barra da Tijuca                     803.58         708.5          2514
+Gávea                               756.80         629.0           171
+Alto da Boa Vista                   747.17         750.0            29
+Copacabana                          708.22         614.0          7711
+Recreio dos Bandeirantes            682.42         562.0          1281
+
+=========================================
+  TOP 10 BAIRROS MAIS BARATOS (Média)    
+=========================================
+                Preço Médio (R$)  Mediana (R$)  Qtd Anúncios
+                                               
+Jardim Carioca            136.10          98.5            10
+Cacuia                    142.45         120.0            11
+Sampaio                   164.58         101.5            12
+Vila da Penha             178.45         180.0            11
+Brás de Pina              185.19         150.0            16
+Portuguesa                188.03         153.5            30
+Encantado                 199.85         160.0            13
+Méier                     213.36         143.0            22
+Penha                     237.00         225.0            16
+Bonsucesso                240.00         110.0            16
