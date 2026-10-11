@@ -88,6 +88,7 @@ Limite Superior de Corte: R$ 2202.00
 Total de Outliers encontrados: 2450 anúncios (8.66% da base)
 
 3. Limpeza e transformação
+Após carregar a tabela no Dataframe tiramos os outliers (código 3.1_analise_preco.py presente na pasta notebooks do branche main), após pesquisas e recomendações da IA utilizamos o IQR pois é mais robusto para esse caso, médias e desvios padrão dependendo do preços, caso o anfitrião erre no preço ou coloque de uma hora pra outra um preço muito alto pode atrapalhar a análise.
 =========================================
        RESUMO DE PREÇOS (RJ)             
 =========================================
@@ -125,3 +126,5 @@ Encantado                 199.85         160.0            13
 Méier                     213.36         143.0            22
 Penha                     237.00         225.0            16
 Bonsucesso                240.00         110.0            16
+
+
