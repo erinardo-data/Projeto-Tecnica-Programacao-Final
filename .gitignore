@@ -19,3 +19,7 @@ __pycache__/
 # Arquivos pesados
 *.zip
 *.mp4
+nvimcommands*
+vim_tutor*
+.vim_tutor*
+teste.py
