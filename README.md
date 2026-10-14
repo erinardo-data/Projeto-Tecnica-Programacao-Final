@@ -17,16 +17,15 @@ extrair insights de um dataset real com mais de 28 mil registros.
 
 ## 🗂️ Dataset
 
-| Atributo     | Valor                                      |
-|--------------|--------------------------------------------|
-| Fonte        | [Inside Airbnb — Rio de Janeiro](http://insideairbnb.com/rio-de-janeiro/) |
-| Arquivo      | `AirbnbRJRentals.csv`                      |
-| Linhas       | 28.301                                     |
-| Colunas      | 16                                         |
+| Atributo | Valor |
+|---|---|
+| Fonte | [Inside Airbnb — Rio de Janeiro](http://insideairbnb.com/get-the-data/) |
+| Arquivo | `AirbnbRJRentals.csv` |
+| Linhas | 28.301 |
+| Colunas | 16 |
 
-> ⚠️ O arquivo CSV **não está versionado** neste repositório por ser pesado.
-> Baixe-o diretamente em: http://insideairbnb.com/get-the-data/
-> Salve como `AirbnbRJRentals.csv` na raiz do projeto antes de rodar o notebook.
+> 📥 A base utilizada está disponível em `dados/AirbnbRJRentals.csv`.
+> Caso queira baixar diretamente da fonte original: http://insideairbnb.com/get-the-data/
 
 **Colunas principais:**
 `id`, `name`, `host_id`, `host_name`, `neighbourhood`, `latitude`, `longitude`,
@@ -45,18 +44,20 @@ extrair insights de um dataset real com mais de 28 mil registros.
 - Análise de outliers: quantis, preços zerados e preços extremos
 - Ordenações e filtragens com `sort_values()`
 - Criação de `df_limpo` excluindo registros com `price == 0` (6 linhas removidas)
+- Identificação de outliers com método IQR (Intervalo Interquartil)
+- Ranking dos 10 bairros mais caros e 10 mais baratos por média de preço
 
 ---
 
 ## 🛠️ Stack
 
-| Biblioteca   | Versão  |
-|--------------|---------|
-| Python       | 3.12.3  |
-| pandas       | 3.0.6   |
-| numpy        | 2.5.3   |
-| matplotlib   | 3.11.2  |
-| seaborn      | 0.13.2  |
+| Biblioteca | Versão |
+|---|---|
+| Python | 3.12.3 |
+| pandas | 3.0.6 |
+| numpy | 2.5.3 |
+| matplotlib | 3.11.2 |
+| seaborn | 0.13.2 |
 
 ---
 
@@ -71,10 +72,10 @@ extrair insights de um dataset real com mais de 28 mil registros.
 
 ```bash
 # 1. Clone o repositório
-git clone git@github.com:erinardo-data/Projeto_Final_Tecnicas_de_Programacao_I.git
+git clone git@github.com:erinardo-data/Projeto-Tecnica-Programacao-Final.git
 
 # 2. Acesse a pasta
-cd Projeto_Final_Tecnicas_de_Programacao_I
+cd Projeto-Tecnica-Programacao-Final
 
 # 3. Crie e ative o ambiente virtual
 uv venv .venv3.12
@@ -83,9 +84,7 @@ source .venv3.12/bin/activate
 # 4. Instale as dependências
 uv pip install pandas numpy matplotlib seaborn jupyter
 
-# 5. Baixe o dataset e salve como AirbnbRJRentals.csv na raiz do projeto
-
-# 6. Abra o notebook
+# 5. Abra o notebook principal
 jupyter notebook Projeto_Final.ipynb
 ```
 
@@ -94,9 +93,18 @@ jupyter notebook Projeto_Final.ipynb
 ## 📁 Estrutura do repositório
 
 ```
-Projeto_Final_Tecnicas_de_Programacao_I/
-├── Projeto_Final.ipynb       # Notebook principal
-├── AirbnbRJRentals.csv       # ⚠️ NÃO versionado — baixar separadamente
+Projeto-Tecnica-Programacao-Final/
+├── dados/
+│   └── AirbnbRJRentals.csv       # Base de dados — Inside Airbnb RJ
+├── notebooks/
+│   ├── 2.1_dimensoes_memoria.py
+│   ├── 2.2_dados_faltantes.py
+│   ├── 2.3_duplicados_inconsistentes.py
+│   ├── 2.4_identificacao_outliers.py
+│   ├── 3.1_analise_preco.py
+│   └── Projeto_Analise_Airbnb.ipynb
+├── Projeto_Final.ipynb           # Notebook principal
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -106,5 +114,4 @@ Projeto_Final_Tecnicas_de_Programacao_I/
 ## 👥 Equipe
 
 - Erinardo Moura Araujo
-- [Nome do colega 2]
-- [Nome do colega 3]
+- Felipe Andrade Santos
