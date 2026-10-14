@@ -1,15 +1,10 @@
-# Configurações do VS Code / Ambientes virtuais
+# Ambientes virtuais
 .venv/
 .venv*/
-.vscode/
-env/
-.env
-venv/
 
 # Cache do Python
 __pycache__/
 *.pyc
-*.py[cod]
 
 # Notebooks
 .ipynb_checkpoints/
@@ -17,18 +12,10 @@ __pycache__/
 # Backups de editor
 *~
 
-# Credenciais
+# Credenciais   
 .env
 *.key
 
 # Arquivos pesados
 *.zip
 *.mp4
-
-# Arquivos de Sistema Operacional (Windows/Mac)
-.DS_Store
-Thumbs.db
-
-# Bases de dados (Opcional: remover o # abaixo se quisermos ignorar todos os CSVs no futuro)
-# *.csv
-# *.xlsx
