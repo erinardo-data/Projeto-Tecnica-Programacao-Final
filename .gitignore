@@ -23,3 +23,6 @@ nvimcommands*
 vim_tutor*
 .vim_tutor*
 teste.py
+*.ini
+*.pptx
+*.py
